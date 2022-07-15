@@ -1,0 +1,225 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kumbh Sans';
+
+}
+
+body {
+    background-color: #17162E;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+
+    height: 45px;
+    top: 62px;
+    margin-top: 5rem;
+}
+
+#buscamovie {
+    border: none;
+    background: transparent;
+    width: 30rem;
+    height: 3rem;
+
+}
+
+#buscar-icon {
+    display: flex;
+    padding: 0.3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+#search-icon {
+    cursor: pointer;
+    background: transparent;
+
+}
+
+#favoritosCheck {
+
+    margin-top: 1rem;
+}
+
+#favoritosCheck input:checked {
+    background-color: aqua;
+}
+
+
+
+main {
+    margin-bottom: 2rem;
+}
+
+#box {
+    position: unset;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+
+    max-width: 1024px;
+
+    /* Shadow */
+    box-shadow: 32.8387px 24.5482px 79px rgba(0, 0, 0, 0.15), 23.8851px 17.855px 53.2479px rgba(0, 0, 0, 0.121406), 16.6246px 12.4276px 34.4391px rgba(0, 0, 0, 0.10125), 10.9035px 8.15079px 21.3701px rgba(0, 0, 0, 0.0867188), 6.56775px 4.90965px 12.8375px rgba(0, 0, 0, 0.075), 3.46346px 2.58907px 7.6377px rgba(0, 0, 0, 0.0632813), 1.4367px 1.07399px 4.56719px rgba(0, 0, 0, 0.04875), 0.333519px 0.249318px 2.42246px rgba(0, 0, 0, 0.0285938);
+    border-radius: 8px;
+
+    background: #1D1C3B;
+}
+
+.capa-movie {
+    top: 5px;
+    border-radius: 50%;
+    margin: 1rem;
+    width: 139px;
+    max-height: 139px;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.3));
+}
+
+.icon-title {
+    display: flex;
+    grid-template-columns: auto;
+}
+
+.icon-title>div {
+    display: flex;
+    width: 200px;
+    height: 171px;
+}
+
+.icon-title :first-child {
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icon,
+.icon>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon>div>img {
+    margin-right: 0.5rem;
+}
+
+/* Mudando Stylo do checkbox*/
+.container-checkbox {
+    /*display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    opacity: initial;
+    width: 0px;
+    height: 0px;
+}
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: solid #706EA8 2px;
+    box-shadow: #7b7aa6;
+}
+
+/* Adicionar uma cor de fundo cinza ao passar o mouse */
+.container-checkbox:hover input~.checkmark {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Quando o checkbox é clicado, adicionar um fundo*/
+.container-checkbox input:checked~.checkmark {
+    background-color: rgba(89, 86, 95, 0.352);
+}
+
+
+/* Criar o ícone de check, escondido quando não estiver selecionado */
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 3px;
+    top: 1px;
+    width: 8px;
+    height: 8px;
+    border: solid rgb(217, 215, 223);
+    border-width: 0 3px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Exibir o ícone quando selecionado */
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/*Fim do stylo do checkbox */
+
+.avali {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 268px;
+    height: 200px;
+}
+
+.descricao {
+    max-width: 50%;
+    padding: 2rem;
+    width: 546px;
+    height: auto;
+}
+
+.descricao,
+.descricao>span {
+    background: transparent;
+}
+
+.descricao>span {
+    max-width: 600px;
+    max-height: 120px;
+    color: #ACACAC;
+}
+
+footer {
+    background: #8A8A8A;
+    height: 10vh;
+}
