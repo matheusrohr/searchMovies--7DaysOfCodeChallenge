@@ -45,6 +45,10 @@ header {
     border-radius: 8px;
 }
 
+#search-icon:active {
+    background: rgba(55, 55, 255, 0.2);
+}
+
 #search-icon {
     cursor: pointer;
     background: transparent;
