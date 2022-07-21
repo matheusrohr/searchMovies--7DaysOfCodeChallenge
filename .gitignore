@@ -2,7 +2,7 @@ respostaDay1/
 
 .env.local
 
-js/keys.js
+js/key.js
 js/script.js
 
 vscode
